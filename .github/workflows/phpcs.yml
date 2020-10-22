@@ -10,7 +10,7 @@ on:
 
 jobs:
   phpcs:
-    name: PHPCS
+    name: PHPCode Sniffer
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -19,4 +19,4 @@ jobs:
       - name: PHPCS check
         uses: chekalsky/phpcs-action@v1
         with:
-        phpcs_bin_path: './vendor/bin/phpcs'
+          phpcs_bin_path: './vendor/bin/phpcs'
