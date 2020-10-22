@@ -14,7 +14,7 @@ It sends you discord (in a channel) or slack messages like this :
 
 ## Get started
 
-- duplicate .env.dist file as .env.
+- duplicate .env.dist file as .env. (`cp .env.dist .env`)
 - launch `composer install`
 
 ## How to use
@@ -37,12 +37,12 @@ and make sure the default transport in the .env file isn't the one you deleted.
 
 Simply add your JCDecaux API Key in the parameter **JCDECAUX_API** of your .env file
 
-For Discord, add your webtoken id in the DISCORD_WEBHOOK parameter:
-https://discordapp.com/api/webhooks/**760091511525736448/JpjH9RjMtMDI69bPjxC5ZuyDxxxXv_3R-SIxyX7k3Hg1TMnyI9pZetxxxwRwD9C7aab**
+For Discord, add your webtoken id in the **DISCORD_WEBHOOK** parameter:
+https://discordapp.com/api/webhooks/ **760091511525736448/JpjH9RjMtMDI69bPjxC5ZuyDxxxXv_3R-SIxyX7k3Hg1TMnyI9pZetxxxwRwD9C7aab**
 (token after the url)
 
 For slack add your webtoken id in the DISCORD_WEBHOOK parameter: 
-https://hooks.slack.com/services/**T02T2JBT6/B01A2OWPSIX/OjKIlpUA748Vu9n6ksYTDn0H**
+https://hooks.slack.com/services/ **T02T2JBT6/B01A2OWPSIX/OjKIlpUA748Vu9n6ksYTDn0H**
 (token after the url)
 
 Your .env file would look like
@@ -71,6 +71,10 @@ the default transport in `.env` file will be used.
 Simply configure a CRON task with the command. 😎
 
 Use https://crontab.guru or https://crontab-generator.org
+
+#### List stations
+
+You can list stations with the command : `php app.php jcdecaux:stations --contract=lyon`
 
 ### Want to contribute ?
 
